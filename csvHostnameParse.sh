@@ -22,7 +22,7 @@ inputFile=$1
 cat inventory.csv | cut -f 3 -d ',' | tail -n +2 
 
 # Find Mac hostnames
-cat inventory.csv | cut -f 3,16 -d ',' | tail -n +2 | grep -i "10.*" | grep -v -i "Ubuntu" >> MacHosts
+(cat inventory.csv | cut -f 3,16 -d ',' | tail -n +2 | grep -i "10.*" | grep -v -i "Ubuntu") >> MacHosts
 
 # Find Linux hostnames
-cat inventory.csv | cut -f 3,16 -d ',' | tail -n +2 | grep -i "10.*" | grep	-v
+cat inventory.csv | cut -f 3,16 -d ',' | tail -n +2 | grep -i "10.*" | grep -v -f MacHosts
