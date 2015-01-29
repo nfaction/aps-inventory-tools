@@ -17,7 +17,7 @@ COMBINE_BROKEN = False
 MAKE_OUTPUT = True
 
 #expected number of columns
-NUM_COLS = 32
+NUM_COLS = 28
 
 #file IO names
 #INPUT_FILE = 'wikitablescript.txt'
